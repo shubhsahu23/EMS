@@ -1,10 +1,13 @@
 import React from 'react'
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
 
 function App() {
   return (
-    <div>
-      <h1 className='bg-red-500'>hello</h1>
-    </div>
+    <>
+    <Routes>
+      <Route path="/"  />
+    </Routes>
+    </>
   )
 }
 
