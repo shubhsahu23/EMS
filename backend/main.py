@@ -72,7 +72,6 @@ Base.metadata.create_all(bind=engine)
 
 # schemas
 class UserCreate(BaseModel):
-    id:int
     fullname: str
     email: str
     password: str # password added

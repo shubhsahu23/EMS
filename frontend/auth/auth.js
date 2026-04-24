@@ -6,8 +6,8 @@ export const login=async (data)=>{
     form .append("password",data.password);
 
     const res=await API.post("/login",form);
-    localStorage.setItem("token",res.data);
-    return res.data;
+    localStorage.setItem("token",res.data.access_token);
+    return res.data.access_token;
 }
 
 export const register=async (data)=>{
